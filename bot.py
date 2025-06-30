@@ -254,12 +254,13 @@ async def main():
     await set_bot_commands(app)
     await app.run_polling()
 
-if __name__ == "__main__":
-    import sys
-    import nest_asyncio
+import sys
+import nest_asyncio
 
-    if sys.platform == "win32":
-        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+if sys.platform == "win32":
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-    nest_asyncio.apply()
-    asyncio.get_event_loop().run_until_complete(main())
+nest_asyncio.apply()
+
+asyncio.run(main())
+
