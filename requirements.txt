@@ -7,7 +7,7 @@ cffi==1.17.1
 charset-normalizer==3.4.2
 colorama==0.4.6
 cryptography==45.0.3
-firebase-admin==6.9.0
+firebase-admin==6.3.0
 google-api-core==2.25.0
 google-api-python-client==2.171.0
 google-auth==2.40.3
@@ -25,7 +25,7 @@ h2==4.2.0
 hpack==4.1.0
 httpcore==1.0.9
 httplib2==0.22.0
-httpx==0.28.1
+httpx==0.26.0
 hyperframe==6.1.0
 idna==3.10
 instagrapi==2.0.0
