@@ -53,3 +53,4 @@ tzlocal==5.3.1
 uritemplate==4.2.0
 urllib3==2.4.0
 playwright==1.53.0
+nest_asyncio==1.6.0
