@@ -254,13 +254,25 @@ async def main():
     await set_bot_commands(app)
     await app.run_polling()
 
-import sys
-import nest_asyncio
+async def main():
+    load_data()
+    app = ApplicationBuilder().token(BOT_TOKEN).build()
 
-if sys.platform == "win32":
-    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("genkey", genkey))
+    app.add_handler(CommandHandler("usekey", usekey))
+    app.add_handler(CommandHandler("key", key))
+    app.add_handler(CommandHandler("ban", ban))
+    app.add_handler(CommandHandler("unban", unban))
+    app.add_handler(CommandHandler("stop", stop))
+    app.add_handler(CommandHandler("status", status))
+    app.add_handler(CommandHandler("help", help_command))
 
-nest_asyncio.apply()
+    print("✅ Bot running...")
+    await set_bot_commands(app)
+    await app.run_polling()
 
-asyncio.run(main())
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(main())
 

@@ -18,6 +18,7 @@ google-cloud-storage==3.1.0
 google-crc32c==1.7.1
 google-resumable-media==2.7.2
 googleapis-common-protos==1.70.0
+greenlet==3.0.3
 grpcio==1.72.1
 grpcio-status==1.72.1
 h11==0.16.0
@@ -30,6 +31,7 @@ hyperframe==6.1.0
 idna==3.10
 instagrapi==2.0.0
 msgpack==1.1.0
+playwright==1.43.0
 proto-plus==1.26.1
 protobuf==6.31.1
 pyaes==1.6.1
@@ -38,6 +40,7 @@ pyasn1_modules==0.4.2
 pycparser==2.22
 pycryptodomex==3.18.0
 pydantic==1.10.9
+pyee==11.1.0
 PyJWT==2.10.1
 pyparsing==3.2.3
 Pyrogram==2.0.106
@@ -52,5 +55,3 @@ typing_extensions==4.14.0
 tzlocal==5.3.1
 uritemplate==4.2.0
 urllib3==2.4.0
-playwright==1.53.0
-nest_asyncio==1.6.0
